@@ -1,0 +1,12 @@
+<main>
+  <div class="logo">
+      <h1>RuneSearch</h1>
+      <p>A search client for the <a href="#">OSRS Wiki</a></p>
+  </div>
+  <div class="search-container">
+    <input type="text" 
+      [(ngModel)]="searchTerm"
+      [attr.maxlength]="maxSearchLength"
+      (keyup)="onSearchTermChange($event)">
+  </div>
+</main>

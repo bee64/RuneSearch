@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import './colors.scss';
+@import './fonts.scss';
+
+html, body {
+    margin: 0;
+    height: 100%;
+
+    $lightened-cream: scale-color($cream, $lightness: 50%);
+    background: linear-gradient(.10turn, $cream, $lightened-cream);
+
+    font-family: $text-font;
+    color: #333;
+}
